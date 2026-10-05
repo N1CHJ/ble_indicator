@@ -8,18 +8,7 @@ from config import TARGET_ADDRESS, RSSI_THRESHOLDS, GPIO_PINS
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# Ensure GPIO works across devices (Mock on non-RPi)
-try:
-    from gpiozero import LED
-    # Attempt to initialize a pin to verify hardware access
-    _test_led = LED(GPIO_PINS[0])
-    _test_led.close()
-except (ImportError, Exception) as e:
-    logger.warning(f"Failed to load gpiozero natively ({e}). Using MockFactory for cross-device support.")
-    from gpiozero import Device
-    from gpiozero.pins.mock import MockFactory
-    from gpiozero import LED
-    Device.pin_factory = MockFactory()
+from gpiozero import LED
 
 class RSSIIndicator:
     def __init__(self):

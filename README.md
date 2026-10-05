@@ -3,11 +3,7 @@
 RPi to ESP32 Bluetooth RSSI LED Meter.
 A real-time Bluetooth proximity indicator using a Raspberry Pi (or compatible device) as the BLE scanner and LED controller, and an ESP32 WROOM-32 as the BLE beacon transmitter. RSSI signal strength is mapped to a 5-stage LED bar graph.
 
-## Minimal and Effective Architecture
-
-To keep the project clean and maintainable, the architecture has been condensed to its essential components, while still allowing the Python code to run across devices (mocking GPIO on non-Raspberry Pi devices for testing).
-
-### Project Structure
+## Project Structure
 ```
 ble_indicator/
 ├── raspberry_pi/
@@ -30,7 +26,7 @@ Connect 5 LEDs with 220Ω resistors in series to the following GPIO pins:
 - LED 4 (Green): GPIO 23
 - LED 5 (Green): GPIO 24
 
-*Note: The project uses `gpiozero` backed by libgpiod to support the Raspberry Pi 5. On non-Pi devices, `gpiozero` uses a Mock pin factory for testing.*
+*Note: The project uses `gpiozero` backed by libgpiod to support the Raspberry Pi 5.*
 
 ### Software Setup
 ```bash
