@@ -1,0 +1,6 @@
+Overall the project has been focused on planning out the overall problem we wanted to solve and what the constraints or requirements would be based on that problem.
+We decided to make a BLE strength indicator using the esp32 as a BLE beacon and the rpi as the indicator. It wasn't too difficult to decide on the esp32 because it already has BLE in the SOC
+and it is a cheap and easy to use beacon that we can control ourselves. The prpject plan was then generted by the free verson of gemni in google docs and then fed into the free version of gemini in antigravity
+to generate the codebase so far. Overall the bleak library was chosen as it works across the python and arduino languages so that way we can ensure the connectivty of the devices. A config file
+was also create to allow us to enter the parameters and mac adress fo the beacon for testing. So far the code compiles and there are no obvious syntax errors that the IDE has pointed out but neither has been 
+applied to hardware yet. -Nick Jones and Aidan Verdin
