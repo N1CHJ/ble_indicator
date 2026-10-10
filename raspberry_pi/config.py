@@ -3,7 +3,7 @@
 # Target MAC Address or UUID of the ESP32
 # Example MAC: "XX:XX:XX:XX:XX:XX"
 # Example UUID: "0000180f-0000-1000-8000-00805f9b34fb"
-TARGET_ADDRESS = "XX:XX:XX:XX:XX:XX"
+TARGET_ADDRESS = "8e3f7a10-4d2c-4f6b-9a31-2b6c1d9e5f01" #"XX:XX:XX:XX:XX:XX"
 
 # GPIO Pins for the 5 LEDs (BCM numbering)
 GPIO_PINS = [17, 27, 22, 23, 24]

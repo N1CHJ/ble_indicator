@@ -71,7 +71,7 @@ class RSSIIndicator:
         
         try:
             while True:
-                await asyncio.sleep(0.5)
+                await asyncio.sleep(0.25) #.25 on, .25 off = 2hz
                 # Check for disconnect
                 if time.time() - self.last_seen > self.disconnect_timeout:
                     if self.is_connected:

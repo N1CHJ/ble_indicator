@@ -1,0 +1,17 @@
+# Python virtual environments
+**/.venv/
+**/venv/
+
+# Python generated files
+**/__pycache__/
+*.pyc
+
+# PlatformIO generated build files
+**/.pio/
+
+# VS Code machine-specific files
+**/.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
