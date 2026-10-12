@@ -6,8 +6,8 @@
 TARGET_ADDRESS = "8e3f7a10-4d2c-4f6b-9a31-2b6c1d9e5f01" #"XX:XX:XX:XX:XX:XX"
 
 # GPIO Pins for the 5 LEDs (BCM numbering)
-GPIO_PINS = [17, 27, 22, 23, 24]
+GPIO_PINS = [25, 12, 16, 13, 26]
 
 # RSSI thresholds for LED states (Level 1 to Level 5)
 # Adjust these thresholds based on environment and required distances
-RSSI_THRESHOLDS = [-90, -80, -70, -60, -50]
+RSSI_THRESHOLDS = [-90, -82, -74, -68, -62]
